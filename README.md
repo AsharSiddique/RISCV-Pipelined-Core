@@ -46,35 +46,30 @@ Each stage is separated using pipeline registers: `IF/ID`, `ID/EX`, `EX/MEM`, an
 - **Icarus Verilog** 🖥️
 - **GTKWave** 📊
 
-## 🛠️ Setup
+### 🛠️ Setup
 
 ```bash
 git clone https://github.com/<your-username>/RISCV-Pipelined-Core.git
 cd RISCV-Pipelined-Core
 
+iverilog -o top_sim.vvp Top.v Top_tb.v
+vvp top_sim.vvp
 
-- Compile and Simulate
-  ```bash
-    iverilog -o top_sim.vvp Top.v Top_tb.v
-    vvp top_sim.vvp
+gtkwave waveform.vcd
+```
 
-
-- View Waveform
-  ```bash
-    gtkwave waveform.vcd
-
-# 🌊 Example Waveform
+## 🌊 Example Waveform
 
 <img width="959" alt="waveform" src="https://github.com/user-attachments/assets/1468b4b7-221b-4a55-a990-3ebd3c1cae78" />
 
 
-# 📜 License
+## 📜 License
 - This project is licensed under the MIT License – free to use, modify, and share! 😊
 
-# 🙌 Acknowledgments
+## 🙌 Acknowledgments
 - Built with ❤️ by Ashar.
 - Powered by the RISC-V open-source ISA and Verilog’s flexibility.
 
-# 📢 Stay Tuned!
+## 📢 Stay Tuned!
 
 - Exciting updates are on the way as this project evolves with new features, optimizations and enhancements (like forwarding, hazard detection, hazard resolution, CSR support and more). Follow the repository for the latest developments!
