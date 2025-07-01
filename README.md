@@ -46,7 +46,7 @@ Each stage is separated using pipeline registers: `IF/ID`, `ID/EX`, `EX/MEM`, an
 - **Icarus Verilog** 🖥️
 - **GTKWave** 📊
 
-### 🛠️ Setup
+## 🛠️ Setup
 
 ```bash
 git clone https://github.com/<your-username>/RISCV-Pipelined-Core.git
